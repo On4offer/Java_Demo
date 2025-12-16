@@ -18,18 +18,18 @@ public class DemoApplicationRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("[启动阶段6] ======== ApplicationRunner.run被调用 ========");
+        System.out.println("runner-----[启动阶段6] ======== ApplicationRunner.run被调用 ========");
         
         // 演示ApplicationArguments的功能
         Set<String> optionNames = args.getOptionNames();
-        System.out.println("[启动阶段6] 选项参数名称: " + optionNames);
+        System.out.println("runner-----[启动阶段6] 选项参数名称: " + optionNames);
         
         // 获取所有非选项参数
-        System.out.println("[启动阶段6] 非选项参数: " + args.getNonOptionArgs());
+        System.out.println("runner-----[启动阶段6] 非选项参数: " + args.getNonOptionArgs());
         
         // 获取所有原始参数
-        System.out.println("[启动阶段6] 所有参数: " + args.getSourceArgs());
+        System.out.println("runner-----[启动阶段6] 所有参数: " + args.getSourceArgs());
         
-        System.out.println("[启动阶段6] Runner回调执行完成，应用正式启动成功！");
+        System.out.println("runner-----[启动阶段6] Runner回调执行完成，应用正式启动成功！");
     }
 }

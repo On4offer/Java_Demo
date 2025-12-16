@@ -13,14 +13,14 @@ import org.springframework.context.annotation.Configuration;
 public class DemoAutoConfiguration {
 
     static {
-        System.out.println("[启动阶段4] ======== DemoAutoConfiguration被加载 ========");
-        System.out.println("[启动阶段4] 此阶段演示了SpringBoot的自动装配机制");
-        System.out.println("[启动阶段4] 自动配置类通过@EnableAutoConfiguration触发，从spring.factories加载");
+        System.out.println("autoconfigure-----[启动阶段4] ======== DemoAutoConfiguration被加载 ========");
+        System.out.println("autoconfigure-----[启动阶段4] 此阶段演示了SpringBoot的自动装配机制");
+        System.out.println("autoconfigure-----[启动阶段4] 自动配置类通过@EnableAutoConfiguration触发，从spring.factories加载");
     }
 
     @Bean
     public DemoService demoService() {
-        System.out.println("[启动阶段5] DemoAutoConfiguration创建demoService Bean");
+        System.out.println("autoconfigure-----[启动阶段5] DemoAutoConfiguration创建demoService Bean");
         return new DemoService();
     }
 
@@ -29,11 +29,11 @@ public class DemoAutoConfiguration {
      */
     public static class DemoService {
         public DemoService() {
-            System.out.println("[启动阶段5] DemoService被实例化");
+            System.out.println("autoconfigure-----[启动阶段5] DemoService被实例化");
         }
 
         public String getMessage() {
-            return "SpringBoot自动装配机制演示成功！";
+            return "autoconfigure-----SpringBoot自动装配机制演示成功！";
         }
     }
 }

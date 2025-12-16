@@ -1,5 +1,5 @@
 # 自定义ApplicationContextInitializer，用于演示启动流程
-org.springframework.context.ApplicationContextInitializer=com.example.demo.initializer.DemoApplicationContextInitializer
+org.springframework.context.ApplicationContextInitializer=com.example.demo.initializer.AppTypeDebugInitializer,com.example.demo.initializer.DemoApplicationContextInitializer
 
 # 自定义ApplicationListener通过spring.factories注册，以便能监听到早期事件
 org.springframework.context.ApplicationListener=com.example.demo.listener.DemoApplicationListener

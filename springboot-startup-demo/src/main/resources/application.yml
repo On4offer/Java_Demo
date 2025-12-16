@@ -10,6 +10,10 @@ server:
 spring:
   application:
     name: springboot-startup-demo
+  # 环境配置 - 默认激活开发环境
+  # 可以通过命令行参数 --spring.profiles.active=test/prod 来覆盖
+  profiles:
+    active: dev
   # 禁用默认Banner，使用自定义日志输出更清晰地展示启动流程
   main:
     banner-mode: off
