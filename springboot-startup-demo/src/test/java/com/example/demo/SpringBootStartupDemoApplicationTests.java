@@ -34,7 +34,7 @@ class SpringBootStartupDemoApplicationTests {
         // 获取并使用demoService
         DemoAutoConfiguration.DemoService demoService = applicationContext.getBean(DemoAutoConfiguration.DemoService.class);
         String message = demoService.getMessage();
-        assertEquals("SpringBoot自动装配机制演示成功！", message, "demoService的消息应该符合预期");
+        assertEquals("autoconfigure-----SpringBoot自动装配机制演示成功！", message, "demoService的消息应该符合预期");
         System.out.println("[测试] demoService功能正常: " + message);
     }
 
