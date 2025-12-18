@@ -16,8 +16,12 @@ public class OrderService {
     
     // 公共方法
     public void processOrder() {
+        System.out.println("【执行位置】OrderService.processOrder() - 目标方法");
+        System.out.println("【当前操作】执行目标对象的原始业务逻辑");
+        System.out.println("【注意】此方法是通过代理对象调用的，但实际执行的是目标对象的方法");
         System.out.println("【目标方法执行】OrderService.processOrder()");
         System.out.println("处理订单：" + orderNo + ", 金额：" + amount + ", 状态：" + status);
+        System.out.println("【执行位置】OrderService.processOrder() - 方法结束");
     }
     
     public String getOrderDetails() {

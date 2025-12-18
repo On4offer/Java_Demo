@@ -16,8 +16,12 @@ public class UserServiceImpl implements UserService {
     // 公共方法
     @Override
     public void doSomething() {
+        System.out.println("【执行位置】UserServiceImpl.doSomething() - 目标方法");
+        System.out.println("【当前操作】执行目标对象的原始业务逻辑");
+        System.out.println("【注意】此方法是通过代理对象调用的，但实际执行的是目标对象的方法");
         System.out.println("【目标方法执行】UserServiceImpl.doSomething()");
         System.out.println("当前私有属性值：privateField=" + privateField + ", privateNum=" + privateNum);
+        System.out.println("【执行位置】UserServiceImpl.doSomething() - 方法结束");
     }
     
     @Override
