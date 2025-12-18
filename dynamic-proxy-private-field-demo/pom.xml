@@ -47,10 +47,10 @@
                 <configuration>
                     <mainClass>com.demo.proxy.DynamicProxyDemo</mainClass>
                     <!-- Java 9+ 模块化支持：开放java.base模块给CGLIB使用 -->
-                    <jvmArgs>
-                        <jvmArg>--add-opens</jvmArg>
-                        <jvmArg>java.base/java.lang=ALL-UNNAMED</jvmArg>
-                    </jvmArgs>
+                    <arguments>
+                        <arguments>--add-opens</arguments>
+                        <arguments>java.base/java.lang=ALL-UNNAMED</arguments>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
